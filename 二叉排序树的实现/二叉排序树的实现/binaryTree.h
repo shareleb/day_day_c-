@@ -127,7 +127,7 @@ namespace leb {
 			if (cur->m_left && cur->m_right)     
 			{
 #if 0
-			/*	TreeNode<T> * cur2 = cur->m_left;
+				TreeNode<T> * cur2 = cur->m_left;
 				TreeNode<T> * pre2 = cur;
 
 				if (cur2->m_right)
@@ -155,10 +155,10 @@ namespace leb {
 					}
 				}
 
-				delete cur;*/
+				delete cur;
 #else
-				TreeNode<T> * cur2 = cur->m_left;
-				TreeNode<T> * pre2 = cur;
+				TreeNode<T> * cur2 = cur->m_left; //左子树
+				TreeNode<T> * pre2 = cur;   //要删除的那个节点，
 
 				if (cur2->m_right)
 				{
@@ -237,7 +237,7 @@ namespace leb {
 
 			while (cur || !s.empty())
 			{
-				for (; cur; cur = cur->m_left)
+				for (; cur; cur = cur->m_left)  //不断压入左孩子，     
 				{
 					s.push(cur);
 				}
