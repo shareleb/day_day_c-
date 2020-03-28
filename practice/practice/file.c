@@ -33,3 +33,13 @@
 //
 //		
 //}
+//#include<stdio.h>
+//#include<stdlib.h>
+//
+//int main() {
+//
+//
+//	pr
+//	system("pause");
+//	return 0;
+//}
